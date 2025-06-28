@@ -1,0 +1,224 @@
+#content-wrap {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-50per {
+    width: 50%;
+}
+
+.bg-white {
+    background: #FFFFFF;
+}
+
+.bg-gray {
+    background: #f0f2f7;
+}
+
+#top {
+    position: relative; /* 子要素の絶対位置を指定するためにrelativeを使います */
+    text-align: center; /* テキストを中央揃えにします */
+    margin-bottom: 10px;
+}
+
+#fv {
+    width: 100%; /* 画像を親要素に合わせてサイズを調整します */
+    height: auto; /* アスペクト比を保つために高さは自動にします */
+}
+
+h1 {
+    font-size: 6vw;
+    position: absolute; /* 絶対位置で配置します */
+    top: 40%; /* 親要素の中央に位置します */
+    left: 50%; /* 親要素の中央に位置します */
+    transform: translate(-50%, -50%); /* 自身のサイズの半分だけ移動させて中央にします */
+    padding: 10px; /* 余白を追加する場合（オプション） */
+}
+
+#service, .title, .content {
+    max-width: 1040px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    padding-top: 20px;
+
+}
+
+.title h3 {
+    color: #013894;
+    font-family: "Overpass";
+    font-size: 48px;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.title span {
+    font-size: 22px;
+}
+
+.sub-title {
+    font-size: 31px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.subsub-title {
+    font-size: 19px;
+
+    margin-bottom: 30px;
+
+}
+
+.content {
+    padding: 20px 0px;
+}
+
+.heading1 {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    color: var(--main-color);
+    line-height: 9rem;
+}
+
+.heading1 {
+    color: #89aacf;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.heading1 span {
+    position: relative;
+    z-index: 1;
+    right: 0;
+}
+
+.heading2 {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    color: var(--main-color);
+    position: relative;
+    line-height: 9rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.heading2::before {
+    color: #dbe4e8;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 6rem;
+    line-height: 1;
+}
+
+.heading2 span {
+    position: relative;
+    z-index: 1;
+}
+
+.news-post {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+
+    box-shadow: 0.1rem 0.1rem 1.4rem #ededed;
+
+    margin-bottom: 5px;
+
+}
+
+.news-pad {
+
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+
+    color: rgb(0, 0, 0);
+}
+
+.news-press {
+    border: solid 1px;
+    color: #111827;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin-left: 5px;
+}
+
+#recruit-img {
+    margin: 10px auto;
+}
+
+.link-btn01 {
+    margin-top: 80px;
+    background: #405174;
+    border: 1px solid #405174;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #6b757c;
+    line-height: 1.45;
+    text-decoration: none;
+    width: 100%;
+    max-width: 310px;
+    min-height: 69px;
+    border-radius: 9999px;
+    display: table;
+    margin: 0 auto;
+    transition: all 0.4s;
+
+}
+
+.link-btn01 span {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.text {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 1040px) {
+    .title, .content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #top img {
+        object-fit: cover; /* 画像の切り取りを強調 */
+        height: 550px; /* お好みの高さを設定 */
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 10vw;
+    }
+    .heading1 {
+        font-size: 13vw;
+    }
+}
+
+@media (max-width: 430px) {
+    footer p {
+        padding: 80px!important;
+    }
+}

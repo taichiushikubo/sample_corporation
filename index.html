@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Sample Site</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/header.css?v=123456789" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/header.js?v=123456789"></script>
+    <script src="js/animation.js"></script>
+
+</head>
+<body>
+
+<header class="flex items-center justify-between header js-header">
+    <!-- logo - start -->
+    <a href="/" class="header-logo inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
+        <img class="p-navbar__logo" src="images/sample_logo.png" alt="サイトロゴ" />
+    </a>
+    <!-- logo - end -->
+</header>
+
+<!-- loading -->
+<div id="loading">
+    <div class="">
+    </div>
+</div>
+
+<!-- メインコンテンツなど -->
+<div id="" class="">
+    <div id="top" class="">
+        <img id="fv" src="images/topFV.jpg" alt="ファーストビュー画像" />
+        <h1>Sample<br />Corporation Site</h1>
+    </div>
+    <div id="service" class="bg-white">
+        <div class="title">
+            <h2 class="heading1 fade" style="opacity: 1; transform: translateY(0px);">SERVICE</h2>
+            <span> サービス概要 </span>
+        </div>
+
+        <div class="content">
+            <p>&nbsp;</p>
+
+            <p class="sub-title">お客様の課題解決に取り組む、信頼されるパートナーに</p>
+
+            <p class="subsub-title">
+                私たちはBtoB領域を中心に、価値のあるITソリューションをご提案する会社です。
+                <br />
+                クラウドサービスの導入支援や、営業・マーケティングの最適化を支援しています。
+            </p>
+
+            <p class="subsub-title">
+                私たちが大切にしている考え方は
+                <br />
+                ①お客様の成果に貢献すること
+                <br />
+                ②常に学び、成長し続けること
+                <br />
+                ③チームと共に価値を創ること
+            </p>
+
+            <p class="subsub-title">⚪︎⚪︎テックは、企業の未来を支えるプロフェッショナルチームを目指しています。</p>
+        </div>
+    </div>
+    <div id="news" class="bg-gray">
+        <div class="title">
+            <h2 class="heading1 fade" style="opacity: 1; transform: translateY(0px);">NEWS</h2>
+            <span> お知らせ </span>
+        </div>
+
+        <div class="content">
+            <ul>
+                <li class="news-post">
+                    <a href="#">
+                        <div class="news-pad flex pb-2">
+                            2025-06-28
+                            <span class="news-pad news-press">カテゴリ名</span>
+                        </div>
+                        <h3 class="news-pad">お知らせタイトル１</h3>
+                    </a>
+                </li>
+                <li class="news-post">
+                    <a href="#">
+                        <div class="news-pad flex pb-2">
+                            2025-06-20
+                            <span class="news-pad news-press">カテゴリ名</span>
+                        </div>
+                        <h3 class="news-pad">お知らせタイトル２</h3>
+                    </a>
+                </li>
+                <li class="news-post">
+                    <a href="#">
+                        <div class="news-pad flex pb-2">
+                            2025-06-15
+                            <span class="news-pad news-press">カテゴリ名</span>
+                        </div>
+                        <h3 class="news-pad">お知らせタイトル３</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="recruit" class="bg-white">
+        <div class="title">
+            <h2 class="heading1 fade" style="opacity: 1; transform: translateY(0px);">RECRUIT</h2>
+            <span> 採用 </span>
+        </div>
+
+        <div class="content w-50per">
+            <h2 style="text-align: center; font-size: 25px; margin-bottom: 24px;">
+                採用に関するお問い合わせは<br />こちらから
+            </h2>
+            <a href="#" class="link-btn01">
+                <span class="text">採用情報</span>
+            </a>
+            <img id="recruit-img" src="images/採用.jpeg" alt="採用イメージ画像" />
+        </div>
+    </div>
+    <div id="contact" class="bg-gray">
+        <div class="title">
+            <h2 class="heading1 fade" style="opacity: 1; transform: translateY(0px);">CONTACT</h2>
+            <span> お問い合わせ </span>
+        </div>
+
+        <div class="content w-50per">
+            <div id="contact" class="contact-content">
+                <form action="https://formspree.io/f/xxxxx" method="POST" class="contact-form">
+                    <label for="your-name">お名前<span class="required">*</span></label>
+                    <input type="text" id="your-name" name="name" required />
+
+                    <label for="your-email">メールアドレス<span class="required">*</span></label>
+                    <input type="email" id="your-email" name="email" required />
+
+                    <label for="your-message">お問い合わせ内容<span class="required">*</span></label>
+                    <textarea id="your-message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">送信する</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p class="m-0" style="padding: 90px;">© SAMPLE inc. All Rights Reserved.</p>
+</footer>
+
+<style>
+    #content {
+        background-image: url('images/all-background.png');
+    }
+
+    .fv-bg {
+        background-image: url('images/FV_background.png');
+    }
+</style>
+
+</body>
+</html>

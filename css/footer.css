@@ -1,0 +1,38 @@
+
+footer {
+    font-size: 14px;
+    background: #405174;
+    height: 200px;
+}
+
+.f-contents {
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 4px 0 4px 0;
+    margin: 10px 0 0 0;
+    list-style: none;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.f-li {
+    padding-top: 10px;
+}
+
+footer p{
+    color: #fff;
+    font-weight: 400;
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}

@@ -1,0 +1,121 @@
+.news-title {
+    display: flex;
+    align-items: center;
+    height: 24rem;
+    letter-spacing: 0.6rem;
+    background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(http://localhost:8080/wp-content/uploads/2023/06/top-FVのコピー.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+
+}
+
+.news-title__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0 5%;
+
+}
+
+.news-title__inner > span {
+    display: inline-block;
+    width: 100%;
+
+    color: #333;
+
+}
+
+.news-title--en {
+    font-size: 4.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.news-contents {
+    width: auto;
+
+    margin: 50px 75px;
+
+}
+
+
+.news-article {
+    font-size: 20px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.article-title {
+    font-size: 32px;
+}
+
+/*パンくずりすと*/
+.breadcrumb {
+    margin: 0;
+    padding: 10px 0;
+    font-size: .8em;
+    list-style: none;
+}
+
+.breadcrumb li {
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+}
+
+.breadcrumb li:after {
+    content: '>';
+    padding: 0 0.2em;
+}
+
+.breadcrumb li:last-child:after {
+    content: '';
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.breadcrumb li:first-child a:before {
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #2e7fea;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+
+.wp-block-gallery {
+    display: flex;
+}
+
+.blog-content {
+    line-height: 4;
+}
+
+@media (max-width: 600px) {
+
+    .news-contents {
+        margin: 20px 20px;
+    }
+
+    .article-title {
+        font-size: 20px;
+    }
+
+    .breadcrumb {
+        font-size: .7em;
+    }
+
+
+}
