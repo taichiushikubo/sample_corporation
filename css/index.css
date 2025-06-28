@@ -29,7 +29,7 @@
     height: auto; /* アスペクト比を保つために高さは自動にします */
 }
 
-h1 {
+.name {
     font-size: 6vw;
     position: absolute; /* 絶対位置で配置します */
     top: 40%; /* 親要素の中央に位置します */
